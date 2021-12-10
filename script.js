@@ -1,21 +1,4 @@
-"use strict";
-
-// const personen = {
-//   1: 'Lisa',
-//   2: 'Ritva',
-//   3: 'Bernd',
-//   4: 'Lina',
-//   5: 'Ina',
-//   6: 'Philipp',
-//   7: 'Sara',
-//   8: 'Daniel',
-//   9: 'Robin',
-// };
-
-// const kinder = { 10: 'Elias', 11: 'Ronja', 12: 'Paul', 13: 'Hanna' };
-
-// let randomNumber = Math.trunc(Math.random() * 9) + 1;
-// let randomNumber2 = Math.trunc(Math.random() * 4) + 1;
+'use strict';
 
 let rollNewNumber = function () {
   const a = Math.trunc(Math.random() * 9) + 1;
@@ -28,15 +11,15 @@ let rollNewNumberKids = function () {
 };
 
 const personen = [
-  "Lisa",
-  "Ritva",
-  "Bernd",
-  "Ina",
-  "Philipp",
-  "Sara",
-  "Daniel",
-  "Robin",
-  "Lina",
+  'Lisa',
+  'Ritva',
+  'Bernd',
+  'Ina',
+  'Philipp',
+  'Sara',
+  'Daniel',
+  'Robin',
+  'Lina',
 ];
 // const kinder = ['Elias', 'Paul', 'Hanna', 'Ronja'];
 // const pärchen = [
@@ -48,29 +31,34 @@ const personen = [
 
 const ziehung = [];
 let zufallsZahlen = [];
-// let zufallsZahlenGezogene = [];
+let zufallsZahlenGezogene = [];
 
-document.querySelector(".btn").addEventListener("click", function () {
-  for (let i = 0; zufallsZahlen.length <= personen.length; i++) {
-    let a = rollNewNumber();
+// Button Wichteln
+document.querySelector('.btn').addEventListener('click', function () {
+  // 1.Array von Zufallszahlen
+  for (let i = 0; zufallsZahlen.length < personen.length; i++) {
+    let a = rollNewNumber() - 1;
     if (zufallsZahlen.includes(a)) {
       continue;
     } else {
       zufallsZahlen.push(a);
     }
   }
-  console.log(zufallsZahlen);
-  //   for (let i = 0; zufallsZahlenGezogene.length <= personen.length; i++) {
-  //     let a = rollNewNumber();
-  //     if (zufallsZahlenGezogene.includes(a)) {
-  //       continue;
-  //     } else {
-  //       zufallsZahlenGezogene.push(a);
-  //     }
-  //   }
-  //   for (let i = 0; i <= personen.length; i++) {
-  //     document.querySelector(`inhalte${i}`).textContent = `${
-  //       personen[zufallsZahlen[i]]
-  //     } hat ${personen[zufallsZahlenGezogene[i]]} gezogen.`;
-  //   }
+  // 2.Array von Zufallszahlen
+  for (let i = 0; zufallsZahlenGezogene.length < personen.length; i++) {
+    let a = rollNewNumber() - 1;
+    if (
+      zufallsZahlenGezogene.includes(a) ||
+      zufallsZahlen[zufallsZahlenGezogene.length] === a
+    ) {
+      continue;
+    } else {
+      zufallsZahlenGezogene.push(a);
+    }
+  }
+  for (let i = 0; i < personen.length; i++) {
+    document.getElementById(`inhalte--${i}`).textContent = `${
+      personen[zufallsZahlen[i]]
+    } hat ${personen[zufallsZahlenGezogene[i]]} gezogen.`;
+  }
 });
