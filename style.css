@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  background-color: #f3f3f3;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.erstezeile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome {
+  font-size: 4rem;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 20pt;
+}
+.Tontuu {
+  border-radius: 9rem;
+  width: 40%;
+  float: left;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 4rem;
+}
+
+/* .heading__list {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+} */
+/* Personen Liste */
+.list {
+  grid-row: 2 / span 3;
+  background-color: rgb(35, 152, 219);
+  border-radius: 2rem;
+  overflow: scroll;
+  max-width: 35%;
+  flex: 4 0 auto;
+  margin: 0 auto;
+}
+.inhalte0,
+.inhalte1,
+.inhalte2,
+.inhalte3,
+.inhalte4,
+.inhalte5,
+.inhalte6,
+.inhalte7,
+.inhalte8 {
+  padding: 10pt 10pt;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  font-size: large;
+}
+.type {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.logo {
+  overflow: auto;
+  width: 45%;
+  flex: 2 0 auto;
+  margin-left: 80pt;
+  margin-top: 0px;
+  border-radius: 10rem;
+}
+.btn {
+  flex: 1 0 auto;
+  position: relative;
+  top: 3rem;
+  left: 34rem;
+
+  padding: 2em 4em 2em 4em;
+  border-radius: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+  font-size: large;
+  outline-style: ridge;
+}
