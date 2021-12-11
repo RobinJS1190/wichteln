@@ -63,8 +63,8 @@ document.querySelector('.btn').addEventListener('click', function () {
   }
 
   // Array Pärchen Zufallszahlen
-  for (let i = 0; zufallsZahlenPärchen < pärchen.length; i++) {
-    let a = rollNewNumberKids();
+  for (let i = 0; zufallsZahlenPärchen.length < pärchen.length; i++) {
+    let a = rollNewNumberKids() - 1;
     if (zufallsZahlenPärchen.includes(a)) {
       continue;
     } else {
@@ -73,8 +73,8 @@ document.querySelector('.btn').addEventListener('click', function () {
   }
 
   // Array Kinder Zufallszahlen
-  for (let i = 0; zufallsZahlenKinder < kinder.length; i++) {
-    let a = rollNewNumberKids();
+  for (let i = 0; zufallsZahlenKinder.length < kinder.length; i++) {
+    let a = rollNewNumberKids() - 1;
     if (zufallsZahlenKinder.includes(a)) {
       continue;
     } else {
@@ -87,5 +87,12 @@ document.querySelector('.btn').addEventListener('click', function () {
     document.getElementById(`inhalte--${i}`).textContent = `${
       personen[zufallsZahlen[i]]
     } hat ${personen[zufallsZahlenGezogene[i]]} gezogen.`;
+  }
+
+  // Ziehung Pärchen und Kinder in html Liste wiedergeben
+  for (let i = 10; i < pärchen.length + 10; i++) {
+    document.getElementById(`inhalte--${i}`).textContent = `${
+      pärchen[zufallsZahlenPärchen[i - 10]]
+    } haben ${kinder[zufallsZahlenKinder[i - 10]]} gezogen.`;
   }
 });
