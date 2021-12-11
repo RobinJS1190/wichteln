@@ -1,5 +1,7 @@
 'use strict';
 
+// Functionen Zufallszahlen
+
 let rollNewNumber = function () {
   const a = Math.trunc(Math.random() * 9) + 1;
   return a;
@@ -21,17 +23,20 @@ const personen = [
   'Robin',
   'Lina',
 ];
-// const kinder = ['Elias', 'Paul', 'Hanna', 'Ronja'];
-// const pärchen = [
-//   'Ritva & Bernd',
-//   'Ina & Philipp',
-//   'Sara & Daniel',
-//   'Lisa & Robin',
-// ];
+const kinder = ['Elias', 'Paul', 'Hanna', 'Ronja'];
+const pärchen = [
+  'Ritva & Bernd',
+  'Ina & Philipp',
+  'Sara & Daniel',
+  'Lisa & Robin',
+];
 
-const ziehung = [];
+// Arrays erstellen
+// const ziehung = [];
 let zufallsZahlen = [];
 let zufallsZahlenGezogene = [];
+let zufallsZahlenPärchen = [];
+let zufallsZahlenKinder = [];
 
 // Button Wichteln
 document.querySelector('.btn').addEventListener('click', function () {
@@ -56,6 +61,28 @@ document.querySelector('.btn').addEventListener('click', function () {
       zufallsZahlenGezogene.push(a);
     }
   }
+
+  // Array Pärchen Zufallszahlen
+  for (let i = 0; zufallsZahlenPärchen < pärchen.length; i++) {
+    let a = rollNewNumberKids();
+    if (zufallsZahlenPärchen.includes(a)) {
+      continue;
+    } else {
+      zufallsZahlenPärchen.push(a);
+    }
+  }
+
+  // Array Kinder Zufallszahlen
+  for (let i = 0; zufallsZahlenKinder < kinder.length; i++) {
+    let a = rollNewNumberKids();
+    if (zufallsZahlenKinder.includes(a)) {
+      continue;
+    } else {
+      zufallsZahlenKinder.push(a);
+    }
+  }
+
+  // Ziehung Erwachsene in html Liste wiedergeben
   for (let i = 0; i < personen.length; i++) {
     document.getElementById(`inhalte--${i}`).textContent = `${
       personen[zufallsZahlen[i]]

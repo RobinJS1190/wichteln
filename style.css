@@ -37,6 +37,7 @@ body {
 
 main {
   display: flex;
+  overflow: scroll;
   justify-content: space-around;
   align-content: center;
   margin-top: 4rem;
@@ -53,7 +54,7 @@ main {
   grid-row: 2 / span 3;
   background-color: rgb(35, 152, 219);
   border-radius: 2rem;
-  overflow: scroll;
+
   max-width: 35%;
   flex: 4 0 auto;
   margin: 0 auto;
