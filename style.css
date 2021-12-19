@@ -36,7 +36,7 @@ nav {
 
 li {
   display: inline;
-  padding: 15px;
+  padding: 60px;
 }
 
 nav a {
@@ -57,21 +57,33 @@ nav b:hover {
 
 nav img {
   display: inline-block;
+  padding-top: 15px;
 }
 
-.erstezeile {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  /* display: inline; */
-  /* margin: 15px; */
+.Tontuu {
+  border-radius: 9rem;
+  width: 10%;
   /* float: right; */
-  /* padding: 0; */
-  /* margin: 0; */
-  background-color: rgb(37, 36, 36);
-  /* display: inline-block; */
-  padding: top;
 }
+
+nav button {
+  display: inline-block;
+  padding-top: 15px;
+}
+
+/* .erstezeile { */
+/* display: flex; */
+/* align-items: center; */
+/* justify-content: space-between; */
+/* display: inline; */
+/* margin: 15px; */
+/* float: right; */
+/* padding: 0; */
+/* margin: 0; */
+/* background-color: rgb(37, 36, 36); */
+/* display: inline-block; */
+/* padding: top;
+} */
 
 /* .welcome {
    font-size: 4rem; 
@@ -79,12 +91,6 @@ nav img {
   position: left;
   margin-bottom: 40pt; 
 } */
-
-.Tontuu {
-  /* border-radius: 9rem; */
-  width: 10%;
-  /* float: right; */
-}
 
 main {
   display: flex;
@@ -123,7 +129,7 @@ main {
   align-items: center;
   border-bottom: 1px solid #eee;
   font-size: large;
-  color: rgb(255, 255, 255);
+  color: rgb(83, 75, 75);
   text-transform: uppercase;
 }
 
