@@ -37,24 +37,21 @@ li {
 }
 .Tontuu {
   border-radius: 9rem;
-  width: 10%;
+  width: 12rem;
 }
 
 main {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
   margin-top: 4rem;
+  display: flex;
 }
 
 /* Personen Liste */
 .list {
   grid-row: 2 / span 3;
-  border-radius: 2rem;
-  #overflow: scroll;
+  border-radius: 3rem;
   max-width: 35%;
   flex: 1 0 auto;
-  margin: 0 auto;
+  margin-left: 5rem;
 }
 .inhalte0,
 .inhalte1,
@@ -67,7 +64,7 @@ main {
 .inhalte8 {
   padding: 10pt 10pt;
   align-items: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 3px solid rgb(129, 127, 127);
   font-size: large;
   color: rgb(83, 75, 75);
   text-transform: uppercase;
@@ -76,20 +73,30 @@ main {
 .inhalte9 {
   padding: 10pt 10pt;
   align-items: center;
-  border-bottom: 1px solid rgb(250, 247, 247);
+  border-bottom: 3px solid rgb(0, 0, 0);
   font-size: x-large;
-  color: rgb(14, 13, 13);
+  color: rgb(3, 3, 3);
   font-family: cursive;
 }
 
-.type {
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.1rem 1rem;
-  border-radius: 10rem;
-  margin-right: 2rem;
-  margin-left: 2rem;
+.inhalteA {
+  padding: 10pt 10pt;
+  align-items: center;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  font-size: x-large;
+  color: rgb(3, 3, 3);
+  font-family: cursive;
 }
+
+.list2 {
+  grid-row: 2 / span 3;
+  border-radius: 3rem;
+  max-width: 35%;
+  flex: 1 0 auto;
+  margin-left: 20rem;
+}
+
+/* Button */
 .btn {
   width: 220px;
   height: 50px;
