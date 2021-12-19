@@ -32,7 +32,7 @@ li {
   font-size: 20px;
 }
 .reload:hover {
-  color: aqua;
+  color: rgb(14, 36, 36);
   font-size: 30px;
   cursor: pointer;
 }
