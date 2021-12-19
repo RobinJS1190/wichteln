@@ -1,8 +1,8 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-}
+} */
 
 html {
   font-size: 62.5%;
@@ -11,28 +11,79 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: #444;
-  background-color: #f3f3f3;
-  height: 100vh;
-  padding: 2rem;
+  /* color: #444;
+  background-color: #f3f3f3; */
+  /* height: 100vh; */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: rgb(36, 34, 34);
+  height: 150px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  float: left;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  padding: 15px;
+}
+
+nav a {
+  color: aliceblue;
+  display: inline-block;
+  padding-top: 15px;
+}
+
+nav b {
+  color: aliceblue;
+  display: inline-block;
+  padding-top: 15px;
+}
+
+nav b:hover {
+  color: aqua;
+}
+
+nav img {
+  display: inline-block;
 }
 
 .erstezeile {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* display: inline; */
+  /* margin: 15px; */
+  /* float: right; */
+  /* padding: 0; */
+  /* margin: 0; */
+  background-color: rgb(37, 36, 36);
+  /* display: inline-block; */
+  padding: top;
 }
 
-.welcome {
-  font-size: 4rem;
+/* .welcome {
+   font-size: 4rem; 
   font-weight: 500;
-  position: relative;
-  margin-bottom: 20pt;
-}
+  position: left;
+  margin-bottom: 40pt; 
+} */
+
 .Tontuu {
-  border-radius: 9rem;
-  width: 40%;
-  float: left;
+  /* border-radius: 9rem; */
+  width: 10%;
+  /* float: right; */
 }
 
 main {
@@ -95,19 +146,19 @@ main {
   margin-right: 2rem;
   margin-left: 2rem;
 }
-.logo {
+/* .logo {
   overflow: auto;
   width: 45%;
   flex: 2 0 auto;
   margin-left: 80pt;
   margin-top: 0px;
   border-radius: 10rem;
-}
-.btn {
-  flex: 1 0 auto;
-  position: relative;
-  top: 3rem;
-  left: 34rem;
+} */
+/* .btn {
+   flex: 1 0 auto; 
+  float: center;
+   top: 3rem;
+  right: 1rem;
 
   padding: 2em 4em 2em 4em;
   border-radius: 4rem;
@@ -117,4 +168,4 @@ main {
   color: black;
   font-size: large;
   outline-style: ridge;
-}
+} */

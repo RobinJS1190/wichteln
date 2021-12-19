@@ -31,8 +31,8 @@ const pärchen = [
   'Lisa & Robin',
 ];
 
-// Arrays erstellen
-// const ziehung = [];
+// Arrays für Zufallszahlen
+
 let zufallsZahlen = [];
 let zufallsZahlenGezogene = [];
 let zufallsZahlenPärchen = [];
@@ -40,7 +40,7 @@ let zufallsZahlenKinder = [];
 
 // Button Wichteln
 document.querySelector('.btn').addEventListener('click', function () {
-  // 1.Array von Zufallszahlen
+  // 1.Array von Zufallszahlen (Ziehende Personen)
   for (let i = 0; zufallsZahlen.length < personen.length; i++) {
     let a = rollNewNumber() - 1;
     if (zufallsZahlen.includes(a)) {
@@ -49,7 +49,7 @@ document.querySelector('.btn').addEventListener('click', function () {
       zufallsZahlen.push(a);
     }
   }
-  // 2.Array von Zufallszahlen
+  // 2.Array von Zufallszahlen (Gezogene Personen)
   for (let i = 0; zufallsZahlenGezogene.length < personen.length; i++) {
     let a = rollNewNumber() - 1;
     if (
